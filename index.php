@@ -127,9 +127,9 @@
 							<?php
 								if ($_POST) {
 									$emailTo = 'ross.nkama@adacollege.org.uk';
-									$header = $_POST['name'];
-									$body = $_POST['email'];
-									$subject = 'Email from rossnkama.github.io';
+									$header = $_POST['email'];
+									$body = $_POST['message'];
+									$subject = 'Email from '.$_POST['name'].' from rossnkama.github.io';
 									mail($emailTo, $subject, $body, $header);
 								}
 							?>
