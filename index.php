@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Hi T</title>
+		<title>Hi</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -121,7 +121,7 @@
 							<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
 							<div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
 							<ul class="actions">
-								<li><input type="submit" value="Send Message" /></li>
+								<li><input type="submit" value="Send Message"/></li>
 							</ul>
 							
 							<?php
