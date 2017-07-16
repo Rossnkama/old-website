@@ -109,7 +109,7 @@
 			<section id="contact" class="main style3 secondary">
 				<div class="content">
 					<header>
-						<h2>Say Hello.</h2>
+						<h2>Say hello</h2>
 						<p>
 							Free for now to send me an email and I'll try to respond as 
 							soon as possible. :)
