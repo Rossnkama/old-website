@@ -15,7 +15,14 @@
 
 .navbar-custom {
     background-color: white;
-    color: white
+}
+
+#link {
+    color: black;
+}
+
+#link:hover {
+    font-weight: 400;
 }
 
 #jumbo {
