@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'fontawesome';
+    src: url('./fonts/fontawesome-webfont.eot');
+    src: url('./fonts/fontawesome-webfont.woff2') format('woff2'),
+        url('./fonts/fontawesome-webfont.woff') format('woff'),
+        url('./fonts/fontawesome-webfont.ttf') format('truetype'),
+        url('./fonts/fontawesome-webfont.svg#fontawesome') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    font-family: 'fontawesome', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-custom {
+    background-color: white;
+    color: white
+}
+
+#jumbo {
+    margin-top: 15%;
+    color: white;
+}
+
+.jumbotron {
+    height: 100vh;
+    text-align: center;
+
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+      animation: rainbow 18s ease infinite;}
+    
+    @-webkit-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @-moz-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @-o-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @keyframes rainbow { 
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+}

@@ -17,15 +17,46 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
-                        <img alt="Ross Nkama">
-                    </a>
+        <section id="naviation-bar">
+            <nav class="navbar navbar-custom navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+                        <a class="navbar-brand" href="#">Ross Nkama</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-home"> <!-- class="glyphicon glyphicon-log-in" ICON HERE!--></span> Intro </a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-heart"></span> What I do </a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Who I am </a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-th-large"></span> Portfolio & CV</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-phone-alt"></span> Contact me </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section id="jumbotronus-maximus">
+            <!-- Jumbotron -->
+            <div class="jumbotron">
+                <div class="container-fluid" id="jumbo">
+                        <h1>Hello there</h1>
+                        <p>...</p>
+                        <p><a class="btn btn-default btn-lg" href="#" role="button">Learn more</a></p>
                 </div>
             </div>
-        </nav>
+            <ul class="nav nav-tabs nav-justified">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+        </section>
+
     </body>
     <script src="./main/script.js"></script>
 </html>
