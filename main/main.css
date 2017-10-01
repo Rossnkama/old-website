@@ -1,20 +1,25 @@
-@font-face {
-    font-family: 'fontawesome';
-    src: url('./fonts/fontawesome-webfont.eot');
-    src: url('./fonts/fontawesome-webfont.woff2') format('woff2'),
-        url('./fonts/fontawesome-webfont.woff') format('woff'),
-        url('./fonts/fontawesome-webfont.ttf') format('truetype'),
-        url('./fonts/fontawesome-webfont.svg#fontawesome') format('svg');
-    font-style: normal;
-    font-weight: normal;
-}
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 * {
-    font-family: 'fontawesome', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Source Sans Pro';
+}
+
+.fact-file {
+    position: relative;
+    margin-top: -3%;
+    font-size: 150%;
 }
 
 .navbar-custom {
     background-color: white;
+    opacity: 0.9;
+}
+
+.profile-pic {
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
 }
 
 .navbar .nav > li > a {
@@ -33,7 +38,8 @@
 }
 
 #link:hover {
-    font-weight: 400;
+    font-size: 105%;
+    transition: 0.5s;
 }
 
 #jumbo {
@@ -41,54 +47,99 @@
     color: white;
 }
 
-.parallax { 
-    /* The image used */
-    background-image: url("./images/braincode.gif");
+.parallax {
 
-    /* Set a specific height */
+    background-image: url("./images/physics.png");
+
+    /* Making height go to the bottom of the page */
     height: 100vh;
 
-    /* Create the parallax scrolling effect */
+    /* Making the image static in relation the foreground creating parralex */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.parallax2 {
+    
+        background-image: url("./images/me-vr.jpg"); 
+    
+        /* Making height go to the bottom of the page */
+        height: 100vh;
+    
+        /* Making the image static in relation the foreground creating parralex */
+        background-attachment: fixed;
+        background-position: center -100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
 .speech {
     font-size: 150%;
 }
 
+.CV {
+    font-weight: bold;
+    color: skyblue;
+}
+
 .jumbotronus {
+
     height: 100vh;
     text-align: center;
 
-    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #dd00f3, purple, purple);
+    background: linear-gradient(124deg, red, #ff2400, #e81d1d, #e8b71d, #e3e81d, seagreen, #1ddde8, #dd00f3, purple, purple);
     background-size: 1800% 1800%;
     
-    -webkit-animation: rainbow 18s ease infinite;
-    -z-animation: rainbow 18s ease infinite;
-    -o-animation: rainbow 18s ease infinite;
-      animation: rainbow 18s ease infinite;}
+    -webkit-animation: rainbow 50s ease infinite;
+    -z-animation: rainbow 50s ease infinite;
+    -o-animation: rainbow 50s ease infinite;
+      animation: rainbow 50s ease infinite;
+    }
     
     @-webkit-keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
+        0% {
+            background-position:0% 82%
+        }
+        50% {
+            background-position:100% 19%
+        }
+        100% { 
+            background-position:0% 82%
+        }
     }
     @-moz-keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
+        0% {
+            background-position:0% 82%
+        }
+        50% { 
+            background-position:100% 19%
+        }
+        100% { 
+            background-position:0% 82%
+        }
     }
     @-o-keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
+        0% { 
+            background-position:0% 82%
+        }
+        50% { 
+            background-position:100% 19%
+        }
+        100% { 
+            background-position:0% 82%
+        }
     }
     @keyframes rainbow { 
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
+        0% { 
+            background-position:0% 82%
+        }
+        50% { 
+            background-position:100% 19%
+        }
+        100% { 
+            background-position:0% 82%
+        }
     }
 }
