@@ -34,10 +34,22 @@
 }
 
 #link {
-    color: black;
+    color: black; 
+    font-size: 100%;
+    transition: 0.5s;
 }
 
 #link:hover {
+    font-size: 105%;
+    transition: 0.5s;
+}
+
+.under-link {
+    font-size: 100%;
+    transition: 0.5s;
+}
+
+.under-link:hover {
     font-size: 105%;
     transition: 0.5s;
 }
@@ -82,6 +94,13 @@
 .CV {
     font-weight: bold;
     color: skyblue;
+    transition: 0.5s;
+}
+
+.CV:hover {
+    color: black;
+    font-size: 150%;
+    transition: 0.5s;
 }
 
 .jumbotronus {
