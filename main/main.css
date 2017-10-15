@@ -1,8 +1,34 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("./assets/css/font-awesome.min.css");
 
 * {
     font-family: 'Source Sans Pro';
+}
+
+/* Icon */
+
+.icon > .label {
+	display: none;
+}
+
+.icon {
+    float: right;
+    text-decoration: none;
+    margin: 2%;
+}
+
+.icon:before {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-size: 1.25em;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: grey;
 }
 
 .fact-file {
@@ -19,7 +45,8 @@
 .profile-pic {
 	border-radius: 50%;
 	width: 250px;
-	height: 250px;
+    height: 250px;
+    margin-right: 1px;
 }
 
 .navbar .nav > li > a {
@@ -74,24 +101,25 @@
 }
 
 .parallax2 {
-    
-        background-image: url("./images/me-vr.jpg"); 
-    
-        /* Making height go to the bottom of the page */
-        height: 100vh;
-    
-        /* Making the image static in relation the foreground creating parralex */
-        background-attachment: fixed;
-        background-position: center -100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+
+    background-image: url("./images/me-vr.jpg"); 
+
+    /* Making height go to the bottom of the page */
+    height: 100vh;
+
+    /* Making the image static in relation the foreground creating parralex */
+    background-attachment: fixed;
+    background-position: center -100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .speech {
     font-size: 150%;
 }
 
 .CV {
+    font-size: 100%;
     font-weight: bold;
     color: skyblue;
     transition: 0.5s;
