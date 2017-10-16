@@ -16,6 +16,12 @@
     float: right;
     text-decoration: none;
     margin: 2%;
+    color: grey;
+}
+
+.icon:hover {
+    color: black;
+    transition: 0.8s;
 }
 
 .icon:before {
@@ -28,7 +34,6 @@
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	color: grey;
 }
 
 .fact-file {
