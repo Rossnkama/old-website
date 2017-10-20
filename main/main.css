@@ -97,6 +97,10 @@ html, body {
     transition: 0.5s;
 }
 
+#picture-of-me {
+    display: none;
+}
+
 #jumbo {
     margin-top: 10%;
     color: white;
@@ -206,4 +210,49 @@ html, body {
     100% { 
         background-position:0% 82%
     }
+}
+
+@media only screen and (max-width: 770px) {
+    .icon {
+        float: right;
+        text-decoration: none;
+        margin: 2%;
+        color: grey;
+        transition: 0.5s;
+    }
+    #the-label {
+        display: none;
+    }
+    #all-icons {
+        position: relative;
+        right: 30%;
+    }
+    .parallax::before {
+        
+            background-image: url("./images/physics.png");
+        
+            /* Making height go to the bottom of the page */
+            height: 100vh;
+        
+            /* Making the image static in relation the foreground creating parralex */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .parallax2::before {
+        
+            background-image: url("./images/me-vr.jpg"); 
+        
+            /* Making height go to the bottom of the page */
+            height: 100vh;
+        
+            /* Making the image static in relation the foreground creating parralex */
+            background-attachment: fixed;
+            background-position: center -100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
 }
