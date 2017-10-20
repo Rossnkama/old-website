@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-@import url("./assets/css/font-awesome.min.css");
 
 * {
     font-family: 'Source Sans Pro';
+}
+
+/* Fixing overflow */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* Icon */
@@ -12,11 +17,17 @@
 	display: none;
 }
 
+.content {
+    background-color: white;
+    padding: 3%;
+}
+
 .icon {
     float: right;
     text-decoration: none;
-    margin: 2%;
+    margin: 1%;
     color: grey;
+    transition: 0.5s;
 }
 
 .icon:hover {
@@ -137,61 +148,62 @@
 }
 
 .jumbotronus {
-
     height: 100vh;
     text-align: center;
 
     background: linear-gradient(124deg, red, #ff2400, #e81d1d, #e8b71d, #e3e81d, seagreen, #1ddde8, #dd00f3, purple, purple);
     background-size: 1800% 1800%;
-    
+
     -webkit-animation: rainbow 50s ease infinite;
     -z-animation: rainbow 50s ease infinite;
     -o-animation: rainbow 50s ease infinite;
-      animation: rainbow 50s ease infinite;
-    }
+    animation: rainbow 50s ease infinite;
+}
     
-    @-webkit-keyframes rainbow {
-        0% {
-            background-position:0% 82%
-        }
-        50% {
-            background-position:100% 19%
-        }
-        100% { 
-            background-position:0% 82%
-        }
+@-webkit-keyframes rainbow {
+    0% {
+        background-position:0% 82%
     }
-    @-moz-keyframes rainbow {
-        0% {
-            background-position:0% 82%
-        }
-        50% { 
-            background-position:100% 19%
-        }
-        100% { 
-            background-position:0% 82%
-        }
+    50% {
+        background-position:100% 19%
     }
-    @-o-keyframes rainbow {
-        0% { 
-            background-position:0% 82%
-        }
-        50% { 
-            background-position:100% 19%
-        }
-        100% { 
-            background-position:0% 82%
-        }
+    100% { 
+        background-position:0% 82%
     }
-    @keyframes rainbow { 
-        0% { 
-            background-position:0% 82%
-        }
-        50% { 
-            background-position:100% 19%
-        }
-        100% { 
-            background-position:0% 82%
-        }
+}
+
+@-moz-keyframes rainbow {
+    0% {
+        background-position:0% 82%
+    }
+    50% { 
+        background-position:100% 19%
+    }
+    100% { 
+        background-position:0% 82%
+    }
+}
+
+@-o-keyframes rainbow {
+    0% { 
+        background-position:0% 82%
+    }
+    50% { 
+        background-position:100% 19%
+    }
+    100% { 
+        background-position:0% 82%
+    }
+}
+
+@keyframes rainbow { 
+    0% { 
+        background-position:0% 82%
+    }
+    50% { 
+        background-position:100% 19%
+    }
+    100% { 
+        background-position:0% 82%
     }
 }
