@@ -1,0 +1,3 @@
+$('.helped-companies').hover(function() {
+    
+})

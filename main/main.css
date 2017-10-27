@@ -11,15 +11,29 @@ html, body {
     overflow-x: hidden;
 }
 
+.helped-companies {
+    margin-left: 3%;
+}
+
 /* Icon */
 
 .icon > .label {
 	display: none;
 }
 
+.work-icon {
+    width: 100px;
+}
+
+.head {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
 .content {
     background-color: white;
     padding: 3%;
+    padding-top: 1%;
 }
 
 .icon {
@@ -227,32 +241,33 @@ html, body {
         position: relative;
         right: 30%;
     }
+    
     .parallax::before {
         
-            background-image: url("./images/physics.png");
+        background-image: url("./images/physics.png");
+    
+        /* Making height go to the bottom of the page */
+        height: 100vh;
+    
+        /* Making the image static in relation the foreground creating parralex */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
         
-            /* Making height go to the bottom of the page */
-            height: 100vh;
-        
-            /* Making the image static in relation the foreground creating parralex */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
-        .parallax2::before {
-        
-            background-image: url("./images/me-vr.jpg"); 
-        
-            /* Making height go to the bottom of the page */
-            height: 100vh;
-        
-            /* Making the image static in relation the foreground creating parralex */
-            background-attachment: fixed;
-            background-position: center -100%;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+    .parallax2::before {
+    
+        background-image: url("./images/me-vr.jpg"); 
+    
+        /* Making height go to the bottom of the page */
+        height: 100vh;
+    
+        /* Making the image static in relation the foreground creating parralex */
+        background-attachment: fixed;
+        background-position: center -100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
         
 }
