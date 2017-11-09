@@ -2,10 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="./main/assets/css/main.css" />
-        <title>Hi.</title>
+        <title>Ross Nkama</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -15,7 +15,7 @@
     </head>
     <body>
         <!-- Navbar + Jumbo's Begin -->
-        <section id="naviation-bar">
+        <section id="Head-section">
             <nav class="navbar navbar-custom navbar-fixed-top">
                 <div class="container-fluid">
                     <div class="navbar-header">
@@ -44,61 +44,10 @@
                             <p>
                                 Welcome to <strong>My portfolio</strong>. My name's <strong>Ross</strong>, I'm a student at <a id="link" href="http://www.adacollege.org.uk/" target="_blank">
                                 Ada. The National College of Digital Skills.</a> <br> I'm an inquisitive person who loves to <strong>think</strong> up as well as challange
-                                <strong>novel</strong> solutions to today's problems.<br> <br> <strong>You want</strong> me on your team - here's why. <br> 
+                                <strong>novel</strong> solutions to today's problems.<br> <br>Take a look at what I have to <strong>offer</strong>.<br> 
                             </p>   
                         </div> 
                         <a href="#two" class="button style2 down anchored">Next</a> 
-                    </div>
-                </div>
-
-                <div class="parallax">
-                    <div class="content style2">
-                        <header>
-                            <h2 class="head">Who I've helped</h2>
-                        </header>
-                        <div class="row helped-companies">
-                            <div class="col-md-2">
-                                <img class="work-icon" src="http://bitetheballot.co.uk/wp-content/uploads/2017/01/cropped-BTB-logo-turquoise.png" alt="">
-                            </div>
-                            <div class="col-md-2">
-                                <img src="https://maxcdn.icons8.com/Share/icon/Logos//google_logo1600.png" class="work-icon">
-                            </div>
-                            <div class="col-md-2">
-                                <img src="https://image.flaticon.com/icons/png/512/124/124010.png" alt="" class="work-icon">
-                            </div>
-                            <div class="col-md-2">
-                                <img src="https://instagram-brand.com/wp-content/uploads/2016/11/app-icon2.png" alt="" class="work-icon">
-                            </div>
-                            <div class="col-md-2">
-                                <img src="https://avatars2.githubusercontent.com/u/17311734?v=4&s=400" alt="" class="work-icon">
-                            </div>
-                            <div class="col-md-2">
-                                <img src="https://seeklogo.com/images/Y/youtube-icon-logo-05A29977FC-seeklogo.com.png" alt="" class="work-icon">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="parallax" style="background-image: url(./main/images/me-thinking.jpg);">
-                    <div class="content style2">
-                        <header>
-                            <h2>What I Do</h2>
-                        </header>
-                        <p>
-                            {Stuff here...}
-                        </p>
-                    </div>
-                </div>
-
-                <div class="parallax2">
-                    <div class="content  style2">
-                        <h2>My Work</h2>
-                        <p class="speech">
-                            I'm largely a self taught programmer where this work is a showcase of some of what I've been
-                            able to produce in about the 5 months of me practicing programming so far and this is
-                            my <a href="https://cordedzero.neocities.org/CV/index.html" style="text-decoration: none;" target="_blank" class="CV">CV</a>.<br>
-                            <p style="color:gray;"><i>Click the images to enlarge them and read their associative notes.</i></p>
-                        </p>
                     </div>
                 </div>
             </section>
@@ -106,8 +55,84 @@
         <!-- Navbar + Jumbo's End -->
 
         <!-- Portfolio section -->
-        <div class="row"></div>
-        <div class="row"></div>
+        <section id="portfolio">
+            <div class="content style2">
+                <h2 class="head">Projects</h2>
+                <p class="speech">
+                    I'm largely a self taught programmer where this work is a showcase of some of what I've been
+                    able to produce in about the 5 months of me practicing programming so far and this is
+                    my <a href="https://cordedzero.neocities.org/CV/index.html" style="text-decoration: none;" target="_blank" class="CV">CV</a>.<br>
+                    <p style="color:gray;"><i>Click the images to enlarge them and read their associative notes.</i></p>
+                </p>
+            </div>
+
+            <div id="gallery" class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img class="card-img" src="./main/images/self_drive.jpg" alt="Avatar" style="width:100%">
+                            <div class="contents-card">
+                                <h4><b>Self driving taxi</b></h4> 
+                                <p>Using Python(PyTorch) and Kivy with deep Q-learning to make a virtual self driving taxi. </p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                                <img class="card-img" src="./main/images/ssynapse.jpg" alt="Avatar" style="width:100%">
+                            <div class="contents-card">
+                                <h4><b>Synapse</b></h4> 
+                                <p>
+                                    I'm using Java to make a programming language who's main purpose is for statistical analysis 
+                                    <br> (Currently on the lexical analyser)
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img class="card-img" src="./main/images/Screen Shot 2017-07-20 at 17.32.05.png" alt="Avatar" style="width:100%">
+                            <div class="contents-card">
+                                <h4><b>IoT Hackathon</b></h4> 
+                                <p>
+                                    I and a friend developed a new information system for our college in a Deloitte IoT hackathon 
+                                    where my team were runners up.
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img class="card-img" src="./main/images/" alt="Avatar" style="width:100%">
+                            <div class="contents-card">
+                                <h4><b>John Doe</b></h4> 
+                                <p>Architect & Engineer</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img class="card-img" src="./main/images/" alt="Avatar" style="width:100%">
+                            <div class="contents-card">
+                                <h4><b>John Doe</b></h4> 
+                                <p>Architect & Engineer</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img class="card-img" src="./main/images/" alt="Avatar" style="width:100%">
+                            <div class="contents-card">
+                                <h4><b>John Doe</b></h4> 
+                                <p>Architect & Engineer</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </section>
 
         <!-- Footer Begin -->
         <section>

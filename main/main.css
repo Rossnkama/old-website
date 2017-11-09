@@ -3,6 +3,17 @@
 
 * {
     font-family: 'Source Sans Pro';
+    text-align: center;
+}
+
+body {
+    /* Making the image static in relation the foreground creating parralex */
+    background-image: url("./images/vectorMe.PNG");
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Fixing overflow */
@@ -11,29 +22,48 @@ html, body {
     overflow-x: hidden;
 }
 
-.helped-companies {
-    margin-left: 3%;
-}
-
 /* Icon */
-
 .icon > .label {
 	display: none;
 }
 
-.work-icon {
-    width: 100px;
+.speech {
+    font-size: 140%;
 }
 
 .head {
-    text-align: center;
     margin-bottom: 3%;
+    font-size: 300%;
 }
 
 .content {
     background-color: white;
     padding: 3%;
     padding-top: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    background-color: whitesmoke;
+    margin: 5%
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+/* Add some padding inside the card container */
+.contents-card {
+    padding: 2px 16px;
+}
+
+.card-img {
+    border-radius: 5px 5px 0 0;
 }
 
 .icon {
@@ -61,12 +91,6 @@ html, body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.fact-file {
-    position: relative;
-    margin-top: -3%;
-    font-size: 150%;
-}
-
 .navbar-custom {
     background-color: white;
     opacity: 0.9;
@@ -84,12 +108,6 @@ html, body {
     color: darkslategray;
 }
 
-.skills-container {
-    text-align: center;
-    background-color: lightgray;
-    box-shadow: 10px 10px 5px #888888;
-}
-
 #link {
     color: black; 
     font-size: 100%;
@@ -101,55 +119,9 @@ html, body {
     transition: 0.5s;
 }
 
-.under-link {
-    font-size: 100%;
-    transition: 0.5s;
-}
-
-.under-link:hover {
-    font-size: 105%;
-    transition: 0.5s;
-}
-
-#picture-of-me {
-    display: none;
-}
-
 #jumbo {
     margin-top: 10%;
     color: white;
-}
-
-.parallax {
-
-    background-image: url("./images/physics.png");
-
-    /* Making height go to the bottom of the page */
-    height: 100vh;
-
-    /* Making the image static in relation the foreground creating parralex */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax2 {
-
-    background-image: url("./images/me-vr.jpg"); 
-
-    /* Making height go to the bottom of the page */
-    height: 100vh;
-
-    /* Making the image static in relation the foreground creating parralex */
-    background-attachment: fixed;
-    background-position: center -100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.speech {
-    font-size: 150%;
 }
 
 .CV {
@@ -176,6 +148,7 @@ html, body {
     -z-animation: rainbow 50s ease infinite;
     -o-animation: rainbow 50s ease infinite;
     animation: rainbow 50s ease infinite;
+    margin: 0px;
 }
     
 @-webkit-keyframes rainbow {
@@ -227,6 +200,7 @@ html, body {
 }
 
 @media only screen and (max-width: 770px) {
+
     .icon {
         float: right;
         text-decoration: none;
@@ -234,40 +208,14 @@ html, body {
         color: grey;
         transition: 0.5s;
     }
+    
     #the-label {
         display: none;
     }
+    
     #all-icons {
         position: relative;
         right: 30%;
-    }
-    
-    .parallax::before {
-        
-        background-image: url("./images/physics.png");
-    
-        /* Making height go to the bottom of the page */
-        height: 100vh;
-    
-        /* Making the image static in relation the foreground creating parralex */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-        
-    .parallax2::before {
-    
-        background-image: url("./images/me-vr.jpg"); 
-    
-        /* Making height go to the bottom of the page */
-        height: 100vh;
-    
-        /* Making the image static in relation the foreground creating parralex */
-        background-attachment: fixed;
-        background-position: center -100%;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
         
 }
