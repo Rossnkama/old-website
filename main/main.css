@@ -141,7 +141,20 @@ html, body {
     height: 100vh;
     text-align: center;
 
-    background: linear-gradient(124deg, red, #ff2400, #e81d1d, #e8b71d, #e3e81d, seagreen, #1ddde8, #dd00f3, purple, purple);
+    background: linear-gradient(124deg, red, #ff2400, #00acca, #7fcdd1, rgb(255, 115, 115), #e8b71d, seagreen, #dd00f3, purple, #e81d1d);
+    background-size: 1800% 1800%;
+
+    -webkit-animation: rainbow 100s ease infinite;
+    -z-animation: rainbow 100s ease infinite;
+    -o-animation: rainbow 100s ease infinite;
+    animation: rainbow 100s ease infinite;
+    margin: 0px;
+}
+
+.Experiences {
+    text-align: center;
+
+    background: linear-gradient(124deg, white, rgb(235, 235, 235));
     background-size: 1800% 1800%;
 
     -webkit-animation: rainbow 50s ease infinite;
