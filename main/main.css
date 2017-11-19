@@ -108,22 +108,6 @@ html, body {
     color: darkslategray;
 }
 
-#link {
-    color: black; 
-    font-size: 100%;
-    transition: 0.5s;
-}
-
-#link:hover {
-    font-size: 105%;
-    transition: 0.5s;
-}
-
-#jumbo {
-    margin-top: 10%;
-    color: white;
-}
-
 .CV {
     font-size: 100%;
     font-weight: bold;
@@ -134,7 +118,23 @@ html, body {
 .CV:hover {
     color: black;
     font-size: 150%;
+}
+
+#linkr {
+    font-size: 100%;
+    color: black;
+    transition: 0.5s
+}
+
+#linkr:hover {
+    color: black;
+    font-size: 110%;
     transition: 0.5s;
+}
+
+#jumbo {
+    margin-top: 10%;
+    color: white;
 }
 
 .jumbotronus {
