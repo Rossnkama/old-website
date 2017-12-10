@@ -1,3 +1,0 @@
-$('#two').click(function() {
-	
-})
