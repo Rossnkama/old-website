@@ -10,13 +10,21 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         <!-- My styles sheet -->
         <link rel="stylesheet" href="./main/main.css">
+
+        <style>
+            body {
+                position: relative;
+            }
+        </style>
+
     </head>
     <body>
         <!-- Navbar + Jumbo's Begin -->
         <section id="Head-section">
-            <nav class="navbar navbar-custom navbar-fixed-top">
+            <nav id="the-navbar" class="navbar navbar-custom navbar-fixed-top">
                 <div class="container-fluid">
                     <div class="navbar-header">
                        
@@ -24,11 +32,11 @@
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav navbar-right" style="font-size: 125%">
-                            <li><a href="#"> Intro </a></li>
-                            <li><a href="#"> Projects </a></li>
-                            <li><a href="#"> Experiences </a></li>
-                            <li><a href="#"> More </a></li>
-                            <li><a href="#"> Contact me </a></li>
+                            <li><a id="Intro"> Intro </a></li>
+                            <li><a id="Projects"> Projects </a></li>
+                            <li><a id="Experiences"> Experiences </a></li>
+                            <li><a id="Extras"> Extras </a></li>
+                            <li><a id="contact me"> Contact me </a></li>
                         </ul>
                     </div>
                 </div>
@@ -43,8 +51,8 @@
                             <br>
                             <p>
                                 Welcome to my portfolio <strong>coded by me</strong>. My name's <strong>Ross</strong>, I'm a student at <a id="linkr" href="http://www.adacollege.org.uk/" target="_blank">
-                                Ada. The National College of Digital Skills.</a> <br> My current passion is <strong>Mahcine learning + AI</strong> and I'm working on a <strong>self driving car.</strong> <br> <br> <span class="CV" style="color:white">
-                                Take a look</span> at what I have to offer.<br> 
+                                Ada. The National College of Digital Skills.</a> <br> My current passion is <strong>Mahcine learning + AI</strong> and I'm working on a <strong>self driving car.</strong> <br> <br> <span class="CV down" style="color:white">Click here to</span> <span class="CV down" style="color:white">
+                                take a look</span> at what I have to offer.<br> 
                             </p>   
                         </div> 
                     </div>
@@ -54,11 +62,11 @@
         <!-- Navbar + Jumbo's End -->
 
         <!-- Portfolio section -->
-        <section id="portfolio">
+        <section id="portfolio" data-spy="scroll" data-target="#the-navbar" data-offset="0">
             <div id="projects" class="content style2">
-                <h2 class="head">Projects</h2>
+                <h2 class="head" href="#projects">Projects</h2>
                 <p class="speech">
-                    I'm largely a self taught programmer where this work is a showcase of some of what I've been
+                    I'm a mostly self taught programmer where this work is a showcase of some of what I've been
                     able to produce in about the 12 months of me practicing programming so far and this is
                     my <a href="https://cordedzero.neocities.org/CV/index.html" style="text-decoration: none;" target="_blank" class="CV">CV</a>.<br>
                     <p style="color:gray;"><i>Click the images to enlarge them and read their associative notes.</i></p>
@@ -92,15 +100,16 @@
                         <div class="card">
                             <img class="card-img" src="./main/images/me-thinking.jpg" alt="Avatar" style="width:100%">
                             <div class="contents-card">
-                                <h4><b>Ross Nkama YouTube channel</b></h4> 
+                                <h4><b>Medium series on machine learning</b></h4> 
                                 <p>
-                                    I'll be uploading videos for beginners to get into machine learning and AI and it's main goal
-                                    is to be giving it's viewers an intuitive understanding of machine learning concepts.
+                                    I'm writing a series of articles for beginners in machine learning on medium with the article's 
+                                    contents pushing a main emphasis in the reader gaining and comprehensive philosophical understanding of
+                                    the content.
 
                                     <br>
                                     <br>
 
-                                    <i>First video will be up on the 30th Nov</i>
+                                    <i>Part 1 will be uploaded in a few days.</i>
                                 </p> 
                             </div>
                         </div>
@@ -147,7 +156,7 @@
                             </div>
                         </div>
                     </div>
-                </div>   
+                </div>  
             </div>
         </section>
 
@@ -184,7 +193,7 @@
                             <h4><b>CorderDojo</b></h4> 
                             <p>
                                 I regularly mentor in coder dojos having contributed about 14 hours so far where I mentor both adults and children -
-                                teaching them web-design, python, scratch and using the raspberry pi.
+                                teaching them web-development, python, scratch and using the raspberry pi.
                             </p> 
                         </div>
                     </div>
@@ -217,7 +226,7 @@
                             <h4><b>Mindscape VR</b></h4> 
                             <p>
                                 I'm the lead developer for a team called Mindscape where our product is a VR app for industry to
-                                help with stress. I'll be pitching at "GIANT" - Global Health Event.
+                                help with stress which I then pitched at "GIANT" - Global Health Event.
                             </p> 
                         </div>
                     </div>
@@ -267,9 +276,8 @@
                     <div class="contents-card">
                         <h4><b>NCS</b></h4> 
                         <p>
-                            In 2016, I attended my first Mozfest and it was amazing. Apart from learning tonnes at other people's
-                            workshops, I helped the college facilitate our own "Build your own reaction game with an arduino" workshop.
-                            <br><br>
+                            I was chosen my my team to be project manager in a project "Save the hedgehogs" where we educated the public 
+                            on common - easy to change habits that positively/negitively affect the wellbeing of hedgehogs.
                         </p> 
                     </div>
                 </div>
@@ -280,8 +288,8 @@
                     <div class="contents-card">
                         <h4><b>Outward Bounds</b></h4> 
                         <p>
-                            In 2016, I attended my first Mozfest and it was amazing. Apart from learning tonnes at other people's
-                            workshops, I helped the college facilitate our own "Build your own reaction game with an arduino" workshop.
+                            Ventured to Cumbria for a week of activities focused on developing softskills/character traits like empathy, leadership, resilience 
+                            and problem solving. 
                             <br><br>
                         </p> 
                     </div>
@@ -293,8 +301,8 @@
                     <div class="contents-card">
                         <h4><b>UltraKids Workshop facillitation</b></h4> 
                         <p>
-                            In 2016, I attended my first Mozfest and it was amazing. Apart from learning tonnes at other people's
-                            workshops, I helped the college facilitate our own "Build your own reaction game with an arduino" workshop.
+                            To help an orginisation "ultrakids", me and my peers orginised and facilitated a workshop where I taught python to children
+                            using BBC's microbit as well as having helped set up and orginise the workshop comminicating with the CEO of said orginisation.
                             <br><br>
                         </p> 
                     </div>
@@ -306,10 +314,10 @@
                 <div class="card">
                     <img class="card-img" src="./main/images/apprent.jpg" alt="Avatar" style="width:100%">
                     <div class="contents-card">
-                        <h4><b>Paid Apprentice helper</b></h4> 
+                        <h4><b>Paid Apprentice Mentoring</b></h4> 
                         <p>
-                            In 2016, I attended my first Mozfest and it was amazing. Apart from learning tonnes at other people's
-                            workshops, I helped the college facilitate our own "Build your own reaction game with an arduino" workshop.
+                            My college chose the best Java developers in my school to paid work mentoring digital innovation apprentices 
+                            where I was among the chosen.
                             <br><br>
                         </p> 
                     </div>
@@ -321,8 +329,8 @@
                     <div class="contents-card">
                         <h4><b>Reviewed BBC's Make It Digital website</b></h4> 
                         <p>
-                            In 2016, I attended my first Mozfest and it was amazing. Apart from learning tonnes at other people's
-                            workshops, I helped the college facilitate our own "Build your own reaction game with an arduino" workshop.
+                            I was completely new to programming in late 2016 so I was helpful to the BBC in reviewing their resources for beginners
+                            who wanted to get into programming. My comments can still be found on BBC's website.
                             <br><br>
                         </p> 
                     </div>
@@ -334,28 +342,128 @@
                     <div class="contents-card">
                         <h4><b>Volunteered to help charity with SEO</b></h4> 
                         <p>
-                            In 2016, I attended my first Mozfest and it was amazing. Apart from learning tonnes at other people's
-                            workshops, I helped the college facilitate our own "Build your own reaction game with an arduino" workshop.
+                            I helped the charity above with their SEO holding multiple meetings with them to assess their strategies and present
+                            improvements.
                             <br><br>
                         </p> 
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img class="card-img" src="./main/images/self_drive.jpg" alt="Avatar" style="width:100%">
+                        <div class="contents-card">
+                            <h4><b>Hatch London Hackathon</b></h4> 
+                            <p>Recently I was invited to and attended a university only hack - Hatch London, despite only being in 
+                                year 13 and I and my team members developing on a platform none of us had used before. 
+                                
+                                <br><br>
+
+                                We beat multiple teams coming 4th with a majority of participants in the late years of studying computer science at 
+                                prestigious universities like UCL and Cambridge.</p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4"></div>
+            </div> 
+
+        <section id="skills">
+            <div class="content style2">
+                <h2 class="head">Technical skills</h2>
+                <p class="speech">
+                    A list of technologies which I'm familiar with using.
+                </p>
+            </div>
+        </section>
+
+            <div class="container-fluid gallery">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img class="card-img" src="./main/images/python-logo.jpg" alt="Avatar" style="width:100%">
+                            <div class="contents-card">
+                                <h4><b>Python</b></h4> 
+                                <p> <b>Proficient</b> - Given a bit of time I should be able to understand what somewhat complex 
+                                    most code is doing as well as make somewhat programs myself with occassional reference to docs and stack 
+                                    overflow.
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img class="card-img" src="./main/images/Java-logo.jpg" alt="Avatar" style="width:100%">
+                            <div class="contents-card">
+                                <h4><b>Java</b></h4> 
+                                <p><b>Proficient</b></p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img class="card-img" src="./main/images/html-css-js-logos.png" alt="Avatar" style="width:100%">
+                            <div class="contents-card">
+                                <h4><b>HTML CSS JS</b></h4> 
+                                <p><b>Proficient</b></p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img class="card-img" src="./main/images/r-programming-language.png" alt="Avatar" style="width:100%">
+                            <div class="contents-card">
+                                <h4><b>R</b></h4> 
+                                <p><b>Familiar</b> - I can understand what less complex code is doing and I'm quite dependent
+                                    on constant reference to documentation to create programs
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img class="card-img" src="./main/images/php-elephant-logo-bd4f9d83be8c8563248fe4793f90bae7.png" alt="Avatar" style="width:100%">
+                            <div class="contents-card">
+                                <h4><b>PHP</b></h4> 
+                                <p><b>Familiar</b></p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img class="card-img" src="./main/images/DeveloperTools_icon.png" alt="Avatar" style="width:100%">
+                            <div class="contents-card">
+                                <h4><b>Developer Tools</b></h4> 
+                                <p>
+                                    <b>OS'/Environments:</b> UNIX, Windows, Linux <br>
+                                    <b>Hardware:</b> Rasperry Pi <br>
+                                    <b>IDE's + Text editors:</b> IntelliJ, Pycharm, Atom, VSCode, Sublime text
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>    
 
         <section id="Experiences">
-                <div class="content style2 Experiences">
-                    <h2 class="head">Contact me</h2>
-                    <p class="speech">
-                        If you'd like to contact me, shoot me an email at: 
-                        
-                        <br>
-                        <br>
+            <div class="content style2 Experiences">
+                <h2 class="head">Contact me</h2>
+                <p class="speech">
+                    If you'd like to contact me, shoot me an email at: 
+                    
+                    <br>
+                    <br>
 
-                        <a class="CV" style="text-decoration: none" href="mailto: ross.nkama@ada.ac.uk">ross.nkama@ada.ac.uk</a>
-                    </p>
-                </div>
-            </section>
+                    <a class="CV" style="text-decoration: none" href="mailto: ross.nkama@ada.ac.uk">ross.nkama@ada.ac.uk</a>
+                </p>
+            </div>
+        </section>
 
         <!-- Add some sort of carousel here -->
 
