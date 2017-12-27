@@ -35,11 +35,22 @@ html, body {
     font-size: 300%;
 }
 
+div.content {
+    position: relative;
+    top: 5%;
+}
+
 .content {
     background-color: white;
     padding: 3%;
     padding-top: 1%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content-last {
+    background-color: white;
+    padding: 3%;
+    padding-top: 1%;
 }
 
 .card {
@@ -48,7 +59,7 @@ html, body {
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
     background-color: whitesmoke;
-    margin: 5%
+    margin: 5%;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -114,6 +125,14 @@ html, body {
     transition: 0.5s;
 }
 
+#clicky {
+    color: white;
+}
+
+#intro-text {
+    text-decoration: none;
+}
+
 .CV:hover {
     color: black;
     font-size: 150%;
@@ -150,18 +169,24 @@ html, body {
     margin: 0px;
 }
 
-.Experiences {
-    text-align: center;
-
-    background: linear-gradient(124deg, white, rgb(235, 235, 235));
-    background-size: 1800% 1800%;
-
-    -webkit-animation: rainbow 50s ease infinite;
-    -z-animation: rainbow 50s ease infinite;
-    -o-animation: rainbow 50s ease infinite;
-    animation: rainbow 50s ease infinite;
-    margin: 0px;
+.contact-me {
+    background-color: #F8F8F8;
 }
+
+/*
+    .contact-me {
+        text-align: center;
+
+        background: linear-gradient(124deg, white, rgb(235, 235, 235));
+        background-size: 1800% 1800%;
+
+        -webkit-animation: rainbow 50s ease infinite;
+        -z-animation: rainbow 50s ease infinite;
+        -o-animation: rainbow 50s ease infinite;
+        animation: rainbow 50s ease infinite;
+        margin: 0px;
+    }
+*/
     
 @-webkit-keyframes rainbow {
     0% {

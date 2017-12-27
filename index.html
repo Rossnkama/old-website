@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         <!-- My styles sheet -->
         <link rel="stylesheet" href="./main/main.css">
 
@@ -21,22 +20,23 @@
         </style>
 
     </head>
-    <body>
+    <body data-spy="scroll" data-target="navbar-collapse intro-text">
         <!-- Navbar + Jumbo's Begin -->
         <section id="Head-section">
             <nav id="the-navbar" class="navbar navbar-custom navbar-fixed-top">
                 <div class="container-fluid">
                     <div class="navbar-header">
                        
-                        <a class="navbar-brand" style="color: black; font-weight: bold; font-size: 150%" href="#">Ross Nkama</a>
+                        <a class="navbar-brand" style="color: black; font-weight: bold; font-size: 150%" role="navigation">Ross Nkama</a>
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav navbar-right" style="font-size: 125%">
-                            <li><a id="Intro"> Intro </a></li>
-                            <li><a id="Projects"> Projects </a></li>
-                            <li><a id="Experiences"> Experiences </a></li>
-                            <li><a id="Extras"> Extras </a></li>
-                            <li><a id="contact me"> Contact me </a></li>
+                            <li><a href="#Intro"> Intro </a></li>
+                            <li><a href="#Projects"> Projects </a></li>
+                            <li><a href="#Experiences"> Experiences </a></li>
+                            <li><a href="#Extras"> Extras </a></li>
+                            <li><a href="#Skills"> Skills </a></li>
+                            <li><a href="#Contact"> Contact me </a></li>
                         </ul>
                     </div>
                 </div>
@@ -44,15 +44,17 @@
 
             <section id="jumbotronus-maximus">
                 <!-- Jumbotron -->
-                <div class="jumbotron jumbotronus">
+                <div class="jumbotron jumbotronus" id="Intro">
                     <div class="container-fluid" id="jumbo">
                         <div class="container">
                             <h1><b style="font-size: 130%">Hello.</b></h1>
                             <br>
-                            <p>
+                            <p class="intro-text">
                                 Welcome to my portfolio <strong>coded by me</strong>. My name's <strong>Ross</strong>, I'm a student at <a id="linkr" href="http://www.adacollege.org.uk/" target="_blank">
-                                Ada. The National College of Digital Skills.</a> <br> My current passion is <strong>Mahcine learning + AI</strong> and I'm working on a <strong>self driving car.</strong> <br> <br> <span class="CV down" style="color:white">Click here to</span> <span class="CV down" style="color:white">
-                                take a look</span> at what I have to offer.<br> 
+                                Ada. The National College of Digital Skills.</a> <br> My current passion is <strong>Mahcine learning + AI</strong> and I'm working on a <strong>self driving car.</strong> <br> <br> 
+
+                                <a href="#Projects" id="intro-text"> <span class="CV down" style="color:white">Click here to</span> <span class="CV down" style="color:white">take a look</span> <span id="clicky">at what I have to offer.</span><br>  </a>
+                                
                             </p>   
                         </div> 
                     </div>
@@ -62,9 +64,9 @@
         <!-- Navbar + Jumbo's End -->
 
         <!-- Portfolio section -->
-        <section id="portfolio" data-spy="scroll" data-target="#the-navbar" data-offset="0">
-            <div id="projects" class="content style2">
-                <h2 class="head" href="#projects">Projects</h2>
+        <section id="my-projects">
+            <div id="Projects" class="content style2">
+                <h2 class="head">Projects</h2>
                 <p class="speech">
                     I'm a mostly self taught programmer where this work is a showcase of some of what I've been
                     able to produce in about the 12 months of me practicing programming so far and this is
@@ -259,7 +261,7 @@
             </div>   
         </div>
 
-        <section id="More">
+        <section id="Extras">
             <div class="content style2">
                 <h2 class="head">More</h2>
                 <p class="speech">
@@ -370,7 +372,7 @@
                 <div class="col-sm-4"></div>
             </div> 
 
-        <section id="skills">
+        <section id="Skills">
             <div class="content style2">
                 <h2 class="head">Technical skills</h2>
                 <p class="speech">
@@ -451,8 +453,8 @@
 
         </section>    
 
-        <section id="Experiences">
-            <div class="content style2 Experiences">
+        <section id="Contact">
+            <div class="content-last style2 contact-me">
                 <h2 class="head">Contact me</h2>
                 <p class="speech">
                     If you'd like to contact me, shoot me an email at: 
