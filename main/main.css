@@ -173,6 +173,12 @@ div.content {
     background-color: #F8F8F8;
 }
 
+
+.texty {
+    margin: 1%;
+    font-size: 150%
+}
+
 /*
     .contact-me {
         text-align: center;
