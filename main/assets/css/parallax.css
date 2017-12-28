@@ -1,0 +1,27 @@
+.projects,
+.experiences,
+.extras,
+.skills {
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects {
+    height: 75%;
+    background-image: url('../../images/vectorMe.PNG');
+}
+
+.experiences {
+    background-image: url('../../images/IMG_20170810_212111_785.jpg');
+}
+
+.extras {
+    background-image: url('../../images/groupwrk.jpg');
+}
+
+.skills {
+    background-image: url('../../images/physics.png');
+}

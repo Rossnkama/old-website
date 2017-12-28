@@ -1,19 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("./assets/css/parallax.css");
 
 * {
     font-family: 'Source Sans Pro';
     text-align: center;
 }
 
+/*
 body {
-    background-image: url("./images/HtKDZ4H.gif");
+    background-image: url("./images/vectorMe.PNG");
 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+/*
 
 /* Fixing overflow */
 html, body {
