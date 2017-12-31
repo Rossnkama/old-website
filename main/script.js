@@ -29,4 +29,3 @@ $(".scrolly a").on("click", function (event) {
 $('.card').click(function(event) {
     $('.' + this.id).modal('toggle')
 })
-
