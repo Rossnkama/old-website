@@ -8,10 +8,10 @@ $(".scrolly a").on("click", function (event) {
     // Making sure that the navbar's link has a hash value
     if (this.hash !== "") {
 
-        var hash = this.hash;
+        var hash = this.hash; 
         
         // Animation
-        $("html").animate({
+        $("html, body").animate({
 
             // Scroll to said hash
             scrollTop: $(hash).offset().top - offset
